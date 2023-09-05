@@ -61,5 +61,7 @@ ans = (digit * pow(10, i )) + ans
 // Binary to Decimal convert
 
 int main (){
-    
+    int n;
+    n = 78;
+    cout<<"You entered: "<<n << endl;
 }
