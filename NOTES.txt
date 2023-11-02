@@ -1,0 +1,46 @@
+LEFT SHIFT
+<< basicaly no get * by 2 but not true in all cases  
+this happens with large numbers 
+
+RIGHT SHIFT
+>> no get / by the prve no 
+eg : 15 >> 1 then 15 / 2
+     15 >> 2 then 15 / 2 * 2
+
+
+
+bitwise operator 
+1. AND -> &
+2. OR -> |
+3. NOT -> ~
+4. XOR -> ^
+
+
+AND operator
+and means multiplecation by bit 
+
+0	0	0
+1	0	0
+0	1	0
+1	1	1
+
+
+OR operator
+
+0	0	 = 0
+1	0	 = 1
+0	1	 = 1
+1	1	 = 1
+
+NOT operator
+
+0	1
+1	0
+
+
+XOR operator
+
+0	0	0
+1	0	1
+0	1	1
+1	1	0

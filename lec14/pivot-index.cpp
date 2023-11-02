@@ -1,17 +1,11 @@
+#include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
 
 int main(){
+    
 
 
 
     return 0;
 }
-
-umar tanwar
-8239087128
-jaipur
-rajasthan
-coder
-software engineering
-
