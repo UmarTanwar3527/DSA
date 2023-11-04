@@ -91,6 +91,23 @@ using namespace std;
 //         b = nextnumber;
 //     }
 // }
+        /*
+        print fibonachi number for the given number 
+        1 , 1 , 2 , 3 , 5 , 8 , 13 , 21 ..
+        eg: i/p = 6 o/p is 8
+        *  Write your code here. 
+         *  Read input as specified in the question.
+         *  Print output as specified in the question.
+        */
+        // int n = 10;
+        // cin >> n;
+        // vector<int> dp(n + 1,-1);
+        // dp[0] = 0; dp[1] = 1;
+        // for (int  i = 2; i <= n; i++)
+        // {
+        //         dp[i] = dp[i - 1]+dp[i - 2];
+        // }
+        // cout<<dp[n];
 
 int main ()
 {
