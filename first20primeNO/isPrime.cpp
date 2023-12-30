@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+using namespace std;
 
 bool isPrime(int n) {
     if (n <= 1) {
@@ -19,11 +20,10 @@ int main() {
 
     while (count < 20) {
         if (isPrime(num)) {
-            std::cout << num << " ";
+            cout << num << " ";
             count++;
         }
         num++;
     }
-
     return 0;
 }

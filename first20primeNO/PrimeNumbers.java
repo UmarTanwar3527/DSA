@@ -1,9 +1,14 @@
+import java.util.*;
 public class PrimeNumbers {
     public static void main(String[] args) {
         int count = 0;
         int num = 2;
 
-        while (count < 20) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("how many first prime number do you want? ");
+        int n = sc.nextInt();
+
+        while (count < n) {
             if (isPrime(num)) {
                 System.out.print(num + " ");
                 count++;
