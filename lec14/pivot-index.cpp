@@ -24,4 +24,4 @@ int main(){
     cout<<"Pivot Index is: " << pivotindex(arr,6) << endl;
 
     return 0;
-}
+}  

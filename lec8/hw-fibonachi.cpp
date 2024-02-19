@@ -2,6 +2,7 @@
 using namespace std;
 
 // PRINTING FIBONACHI SERIES TO THE GIVEN NUMBER
+// if input is 32 then it will print first 32 numbers and 0 and 1
 int main()
 {
     int n;
@@ -23,7 +24,7 @@ int main()
 }
 
 
-// PRINTING  N TH TERM OF TH E FIBONACHI SERIES
+// PRINTING  N TH TERM OF THE FIBONACHI SERIES
 // int fibonachi(int n){
 //     int a = 0;
 //     int b = 1;
