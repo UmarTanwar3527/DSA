@@ -1,9 +1,9 @@
-import java.util.* ;
-import java.io.*; 
+// import java.util.* ;
+// import java.io.*; 
 // below library is used to sort arrays and also to perform several operations
-import java.util.Arrays;
+// import java.util.Arrays;
 
-public class Solution {
+public class LargestElementInArray {
     static int largestElement(int[] arr, int n) {
         int max = arr[0];
 
@@ -15,7 +15,7 @@ public class Solution {
         return max;
 
         // METHOD SECOND (BY SORTING ARRAY)
-        Arrays.sort(arr);
-        return arr[n-1];
+        // Arrays.sort(arr);
+        // return arr[n-1];
 	}
 }
