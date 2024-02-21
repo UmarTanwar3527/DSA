@@ -20,5 +20,6 @@
         "terminal.ansiRed": "#E6193C",
         "terminal.ansiWhite": "#8CA68C",
         "terminal.ansiYellow": "#98981B"
-    }
+    },
+    "terminal.integrated.fontSize": 18
 }
