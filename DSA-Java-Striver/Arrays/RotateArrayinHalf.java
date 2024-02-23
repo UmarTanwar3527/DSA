@@ -8,9 +8,7 @@ import java.util.Arrays;
 public class RotateArrayinHalf {
     public static void main(String[] args) {
         int[] nums = { 2, 5, 4, 9, 2, 6, 8, 12 };
-        // int k = 4;
         int n = nums.length;
-        // k = k % n;// If k = N then there is no point to reverse it
 
         for (int i = 0; i < n; i++) {
             System.out.print(nums[i] + " ");
@@ -24,8 +22,6 @@ public class RotateArrayinHalf {
         int k = nums.length / 2;
         System.out.println(k);
         System.out.println(nums.length);
-        // LEFT ROTATION
-        // Reverse first n-k elements
 
         reverse(nums, k, n - 1);
         System.out.println();
