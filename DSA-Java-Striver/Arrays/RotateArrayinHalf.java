@@ -32,18 +32,6 @@ public class RotateArrayinHalf {
         for (int i = 0; i < n; i++) {
             System.out.print(nums[i] + " ");
         }
-        // // Reverse last k elements
-        // reverse(nums, k , n - 1);
-        // // Reverse whole array
-        // reverse(nums, 0, n - 1);
-
-        // // RIGHT ROTATION
-        // // Reverse first n-k elements
-        // reverse(nums, 0, n - k - 1);
-        // // Reverse last k elements
-        // reverse(nums, n - k, n - 1);
-        // // Reverse whole array
-        // reverse(nums, 0, n - 1);
     }
 
     public static void reverse(int[] arr, int start, int end) {
