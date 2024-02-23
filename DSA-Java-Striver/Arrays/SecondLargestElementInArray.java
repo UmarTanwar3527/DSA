@@ -1,10 +1,14 @@
 public class SecondLargestElementInArray {
-    public static int[] getSecondOrderElements(int n, int []a) {
-        // Write your code here.
-        int slargest = secondLargest(a , n);
-        int ssmallest = secondSmallest(a , n);
+    public static void main(String[] args) {
+        // a = new int[n];
+        int a[] = {2,4,1,3,5};
+        
+        int slargest = secondLargest(a , a.length);
+        // int ssmallest = secondSmallest(arr , n);
         // return {slargest,ssmallest};
-        return new int[]{slargest, ssmallest};
+        System.out.println("second largest"+slargest);
+        // System.out.println("second smallest"+ssmallest);
+        // return new int[]{slargest, ssmallest};
     }
     public static int secondLargest(int[] a,int n){
         int largest = a[0];

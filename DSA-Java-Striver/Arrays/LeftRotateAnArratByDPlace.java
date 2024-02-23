@@ -3,9 +3,66 @@
 import java.util.ArrayList;
 
 public class LeftRotateAnArratByDPlace {
-    class Solution {
+    public void LeetcodeSolution(int[] nums, int k) {
+        int n = nums.length;
+        k = k % n;// If k = N then there is no point to reverse it
+        // LEFT ROTATION
+        // Reverse first n-k elements
+        reverse(nums, 0, k - 1);
+        // Reverse last k elements
+        reverse(nums, k, n - 1);
+        // Reverse whole array
+        reverse(nums, 0, n - 1);
 
-        public static void UsingTempArray(int[] arr, int n, int k) {
+        // RIGHT ROTATION
+        // Reverse first n-k elements
+        reverse(nums, 0, n - k - 1);
+        // Reverse last k elements
+        reverse(nums, n - k, n - 1);
+        // Reverse whole array
+        reverse(nums, 0, n - 1);
+    }
+
+    public void reverse(int[] arr, int start, int end) {
+        for (int i = start, j = end; i < j; i++, j--) {
+            int store = arr[i];
+            arr[i] = arr[j];
+            arr[j] = store;
+        }
+        // while(start <= end){
+        // int temp = arr[start];
+        // arr[start] = arr[end];
+        // arr[end] = temp;
+        // start++;
+        // end--;
+        // }
+    }
+}
+
+class Solution {
+    // CODESTUDIO CODE
+    public static ArrayList<Integer> rotateArray(ArrayList<Integer> arr, int k) {
+        int n = arr.size();
+        k = k % n;
+        reverse(arr, 0, k - 1);
+        reverse(arr, k, n - 1);
+        reverse(arr, 0, n - 1);
+        return arr;
+    }
+
+    public static void reverse(ArrayList<Integer> arr, int start, int end) {
+        while (start <= end) {
+            int temp = arr.get(start);
+            arr.set(start, arr.get(end));
+            arr.set(end, temp);
+            start++;
+            end--;
+        }
+    }
+}
+
+class BruteSolution {
+    public static void UsingTempArray(int[] arr, int n, int k) {
             // BRUTE FORCE APPROACH
             // For Rotating the Elements to right
             if (n == 0)
@@ -41,62 +98,4 @@ public class LeftRotateAnArratByDPlace {
                 arr[i] = temp2[i - n + k];
             }
         }
-
-        public void LeetcodeSolution(int[] nums, int k) {
-            int n = nums.length;
-            k = k % n;// If k = N then there is no point to reverse it
-            // LEFT ROTATION
-            // Reverse first n-k elements
-            reverse(nums, 0,k -1);
-            // Reverse last k elements
-            reverse(nums, k , n - 1);
-            // Reverse whole array
-            reverse(nums, 0, n - 1);
-
-            // RIGHT ROTATION
-            // Reverse first n-k elements
-            reverse(nums, 0, n - k - 1);
-            // Reverse last k elements
-            reverse(nums, n - k, n - 1);
-            // Reverse whole array
-            reverse(nums, 0, n - 1);
-        }
-
-        public void reverse(int[] arr, int start, int end) {
-            for (int i = start, j = end; i < j; i++, j--) {
-                int store = arr[i];
-                arr[i] = arr[j];
-                arr[j] = store;
-            }
-            // while(start <= end){
-            // int temp = arr[start];
-            // arr[start] = arr[end];
-            // arr[end] = temp;
-            // start++;
-            // end--;
-            // }
-        }
-    }
-}
-
-class Solution {
-    // CODESTUDIO CODE
-    public static ArrayList<Integer> rotateArray(ArrayList<Integer> arr, int k) {
-        int n = arr.size();
-        k = k % n;
-        reverse(arr, 0, k - 1);
-        reverse(arr, k, n - 1);
-        reverse(arr, 0, n - 1);
-        return arr;
-    }
-
-    public static void reverse(ArrayList<Integer> arr, int start, int end) {
-        while (start <= end) {
-            int temp = arr.get(start);
-            arr.set(start, arr.get(end));
-            arr.set(end, temp);
-            start++;
-            end--;
-        }
-    }
 }
