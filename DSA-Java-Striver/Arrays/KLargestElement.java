@@ -28,7 +28,7 @@ public class KLargestElement extends Solution{
     //     return large;
     // }
 }
-
+// Both GFG Questions but different Dificulty
 class Solution {
     // Function to return k largest elements from an array.
     public static ArrayList<Integer> kLargest(int arr[], int n, int k) {
@@ -40,5 +40,17 @@ class Solution {
             large.add(arr[i]);
         }
         return large;
+    }
+    int[] kLargestGFGQuestion(int[] arr, int n, int k) {
+        // code here
+        Arrays.sort(arr);
+        int res[] = new int[k];
+        
+        for(int i=0;i<k;i++){
+            
+            res[i] = arr[n-i-1];
+        }
+        
+        return res;
     }
 }

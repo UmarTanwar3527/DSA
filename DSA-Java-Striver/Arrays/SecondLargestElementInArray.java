@@ -15,8 +15,8 @@ public class SecondLargestElementInArray {
         int slargest = -1;
         for(int i =0;i<n;i++){
             if(a[i] > largest){
-                largest = a[i];
                 slargest = largest;
+                largest = a[i];
             }
             else if(a[i] < largest && a[i] > slargest){
                 slargest = a[i];
@@ -31,8 +31,8 @@ public class SecondLargestElementInArray {
 
         for(int i =0;i<n;i++){
             if(a[i] < smallest){
-                smallest = a[i];
                 ssmallest = smallest;
+                smallest = a[i];
             }
             else if(a[i] != smallest && a[i] < ssmallest){
                 ssmallest = a[i];

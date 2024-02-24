@@ -1,19 +1,19 @@
-import java.util.HashSet;
+// import java.util.HashSet;
 
 public class RemoveDuplicatesFormASortedArray {
-    public static int HashSetApproach(int[] arr) {
+    // public static int HashSetApproach(int[] arr) {
         // Brute Force
-        HashSet<Integer> set = new HashSet<>();
-        for (int i = 0; i < arr.length; i++) {
-            set.add(arr[i]);
-        }
-        int k = set.size();
-        int j = 0;
-        for (int x : set) {
-            arr[j++] = x;
-        }
-        return k;
-    }
+        // HashSet<Integer> set = new HashSet<>();
+        // for (int i = 0; i < arr.length; i++) {
+            // set.add(arr[i]);
+        // }
+    //     int k = set.size();
+    //     int j = 0;
+    //     for (int x : set) {
+    //         arr[j++] = x;
+    //     }
+    //     return k;
+    // }
 
     public static int TwoPointerApproach(int[] arr) {
         // Optimal Approach

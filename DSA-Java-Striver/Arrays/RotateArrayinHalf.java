@@ -13,13 +13,17 @@ public class RotateArrayinHalf {
         for (int i = 0; i < n; i++) {
             System.out.print(nums[i] + " ");
         }
+// for (type var : array) 
+// { 
+//     statements using var;
+// }
         System.out.println();
         Arrays.sort(nums);
         for (int i = 0; i < n; i++) {
             System.out.print(nums[i] + " ");
         }
         System.out.println();
-        int k = nums.length / 2;
+        int k = nums.length / 2; 
         System.out.println(k);
         System.out.println(nums.length);
 
