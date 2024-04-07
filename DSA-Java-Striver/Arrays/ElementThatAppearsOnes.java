@@ -1,6 +1,3 @@
-
-import java.util.*;
-
 public class ElementThatAppearsOnes {
     public static int getSingleElement(int[] arr) {
         int n = arr.length;
