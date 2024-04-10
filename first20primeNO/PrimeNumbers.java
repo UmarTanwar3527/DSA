@@ -15,6 +15,8 @@ public class PrimeNumbers {
             }
             num++;
         }
+
+        sc.close();
     }
 
     private static boolean isPrime(int n) {
