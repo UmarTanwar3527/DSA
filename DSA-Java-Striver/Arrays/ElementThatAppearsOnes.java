@@ -21,6 +21,9 @@ public class ElementThatAppearsOnes {
         // This line will never execute
         // if the array contains a single element.
         return -1;
+        // vD!*L%25Jaag
+
+
     }
 
     public static void main(String args[]) {
