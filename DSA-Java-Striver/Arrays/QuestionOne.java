@@ -1,4 +1,7 @@
-// 2) Get an unsorted array and convert into alternate array(alternate array-ascending order array by taking alternate elements). Half elements of array in ascending remaining half in descending. The first n elements should be sorted in ascending order and the next part should be sorted in descending and print it.
+// 2) Get an unsorted array and convert into alternate array(alternate array-ascending order array by 
+// taking alternate elements). Half elements of array in ascending remaining half in descending. 
+// The first n elements should be sorted in ascending order and the next part should be sorted in 
+// descending and print it.
 // Test Case Input: [1,2,3,4,5,6,7,8].8.4
 // Output: \{1, 2, 3, 4, 8, 7, 6, 5\}
 // Function: fn_name(input array, length of array, no of digits to sort (here 3)) Fn_name(input array, 8,4)
