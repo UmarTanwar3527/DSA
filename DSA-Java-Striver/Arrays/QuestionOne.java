@@ -9,20 +9,20 @@ public class QuestionOne {
         int[] nums = { 2, 5, 4, 9, 2, 6, 8, 12 };
         int n = nums.length;
 
-        for (int i = 0; i < n; i++) {
-            System.out.print(nums[i] + " ");
-        }
-        System.out.println();
+        // for (int i = 0; i < n; i++) {
+        //     System.out.print(nums[i] + " ");
+        // }
+        // System.out.println();
         Arrays.sort(nums);
-        for (int i = 0; i < n; i++) {
-            System.out.print(nums[i] + " ");
-        }
-        System.out.println();
+        // for (int i = 0; i < n; i++) {
+        //     System.out.print(nums[i] + " ");
+        // }
+        // System.out.println();
         int k = nums.length / 2; 
-        System.out.println(k);
-        System.out.println(nums.length);
+        // System.out.println(k);
+        // System.out.println(nums.length);
         reverse(nums, k, n - 1);
-        System.out.println();
+        // System.out.println();
         for (int i = 0; i < n; i++) {
             System.out.print(nums[i] + " ");
         }
