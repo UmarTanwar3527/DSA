@@ -25,4 +25,13 @@ class Solution {
     }
     return c<=1;
     }
+
+    public static void main(String[] args) {
+        // Solution sol = new Solution();
+        CheckIfTheArrayIsSorted Ck = new CheckIfTheArrayIsSorted();
+        int[] nums = {3, 4, 5, 1, 2};
+        int arrLength = nums.length;
+        int result = Ck.isSorted(arrLength , nums);
+        System.out.println("Is the array sorted and rotated? " + result);
+    }
 }
