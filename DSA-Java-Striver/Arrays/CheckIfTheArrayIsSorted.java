@@ -13,25 +13,22 @@ public class CheckIfTheArrayIsSorted {
 class Solution {
     public boolean check(int[] nums) {
         int n=nums.length;
-    int c=0;
-    for(int i=0;i<n;i++)
-    {
-        if(nums[(i+1)%n]>=nums[i])
+        int c=0;
+        for(int i=0;i<n;i++)
         {
-
+            if(nums[(i+1)%n]>=nums[i])
+            {
+            }
+            else
+            c++;
         }
-        else
-        c++;
-    }
-    return c<=1;
+        return c<=1;
     }
 
     public static void main(String[] args) {
-        // Solution sol = new Solution();
-        CheckIfTheArrayIsSorted Ck = new CheckIfTheArrayIsSorted();
         int[] nums = {3, 4, 5, 1, 2};
         int arrLength = nums.length;
-        int result = Ck.isSorted(arrLength , nums);
+        int result = CheckIfTheArrayIsSorted.isSorted(arrLength , nums);
         System.out.println("Is the array sorted and rotated? " + result);
     }
 }

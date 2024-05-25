@@ -2,7 +2,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.* ;
-import java.io.*; 
+// import java.io.*; 
 public class Solution{
 	
 	// Function with two parameters
@@ -85,6 +85,7 @@ class CountPrime {
 		Scanner sc = new Scanner(System.in);
 		int s = sc.nextInt();
 		int e = sc.nextInt();
+        sc.close();
 		System.out.println(obj.totalPrime(s, e));
 	}
 }

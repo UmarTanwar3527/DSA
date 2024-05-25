@@ -22,7 +22,7 @@ public class IntroArr {
         for (int i = 0; i < str.length; i++) {
             str[i] = sc.next();
         }
-
+        sc.close();
         System.out.println(Arrays.toString(str));
 
     }
