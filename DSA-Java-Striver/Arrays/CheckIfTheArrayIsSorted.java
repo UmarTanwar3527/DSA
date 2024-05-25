@@ -31,4 +31,9 @@ class Solution {
         int result = CheckIfTheArrayIsSorted.isSorted(arrLength , nums);
         System.out.println("Is the array sorted and rotated? " + result);
     }
+
+    public static int[] twoSum(int[] nums, int target) {
+        
+        throw new UnsupportedOperationException("Unimplemented method 'twoSum'");
+    }
 }
