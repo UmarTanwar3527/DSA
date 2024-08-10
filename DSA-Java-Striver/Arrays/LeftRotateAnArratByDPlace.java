@@ -39,7 +39,7 @@ public class LeftRotateAnArratByDPlace {
     }
 }
 
-class Solution {
+class Solutionclass {
     // CODESTUDIO CODE
     public static ArrayList<Integer> rotateArray(ArrayList<Integer> arr, int k) {
         int n = arr.size();

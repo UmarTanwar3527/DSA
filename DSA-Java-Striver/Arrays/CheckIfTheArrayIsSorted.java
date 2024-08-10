@@ -10,7 +10,7 @@ public class CheckIfTheArrayIsSorted {
     }
 }
 // Leetcode 1752 - Check if The Array is Sorted and Rotated
-class Solution {
+class Solutionclass {
     public boolean check(int[] nums) {
         int n=nums.length;
         int c=0;

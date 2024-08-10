@@ -29,7 +29,7 @@ public class LargestElementInArray {
 // import static LargestElementInArray.largestElement;
 
 // INNER CLASS - WE JUST COPY THE WHOLE CLASS TO THE MAIN FUNCTION CLASS 
-class Solution{
+class Solutionclass{
     public static void main(String[] args) {
         int []arr = {12,13,23,34,53,65,78,65,42,1,35,32};
         int n = arr.length;
