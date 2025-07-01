@@ -13,10 +13,10 @@ public class Sorting {
             arr[mini] = arr[i];
             arr[i] = temp;
         }
-        System.out.println("After selection sort:");
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
-        }
+        // System.out.println("After selection sort:");
+        // for (int i = 0; i < n; i++) {
+        //     System.out.print(arr[i] + " ");
+        // }
     }
 
     public static void bubble_sort(int arr[], int n) {
@@ -61,14 +61,14 @@ public class Sorting {
             }
         }
 
-        // if elements on the left half are still left //
+        // if elements on the left half are still present //
 
         while (left <= mid) {
             temp.add(arr[left]);
             left++;
         }
 
-        // if elements on the right half are still left //
+        // if elements on the right half are still present //
         while (right <= high) {
             temp.add(arr[right]);
             right++;
@@ -100,10 +100,10 @@ public class Sorting {
         System.out.println();
 
         // CALLING SORTING ALGORITHM
-        // selection_sort(arr, n);
+        selection_sort(arr, n);
         // bubble_sort(arr,n);
         // insertion_sort(arr, n);
-        mergeSort(arr, 0, n - 1);
+        // mergeSort(arr, 0, n - 1);
 
         // PRINTING SORTED NUMBER
         System.out.println("After sorting:");
